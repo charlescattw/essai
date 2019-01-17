@@ -1,0 +1,6 @@
+<!-- si border-collapse est non parametre collapse les cellules sont eclatées -->
+table {border-collapse : collapse}
+
+td , th{border: midnightblue 2px solid ; solid-opacity: 50}
+
+

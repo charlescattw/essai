@@ -1,0 +1,16 @@
+p {background-color: midnightblue}
+
+h1 {background-color: cornflowerblue}
+
+div {background-color: midnightblue}
+
+span {background-color: cornflowerblue}
+
+s {color: aliceblue}
+b {color: aliceblue}
+u {color: aliceblue}
+i {color: aliceblue}
+
+#divinline {text-decoration: aquamarine; background-color: deepskyblue; border: darkturquoise}
+#Tinline {text-decoration: aquamarine; background-color: deepskyblue; border: darkturquoise}
+#Tbloc {text-decoration: midnightblue; background-color: aqua; border: aliceblue}

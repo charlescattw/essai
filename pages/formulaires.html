@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les formulaires</title>
+    <link rel="stylesheet" href="../css/formulaires.css">
+</head>
+<body>
+
+<!-- Les forms sont déclarés avec : 'actions' ; 'method' POST car en GET une erreur revient du serveur vers le client.
+Le développeur doit alors rester vigilant aux informations envoyées vers le serveur.-->
+
+<form action="inscription"  method="POST"  >
+
+    <!-- Les input sont obligatoirement déclarés avec : 'type', 'name' c'est un minimum..
+    Le fait qui consiste à utiliser des balises pour les textes, est essentiel à l'organisation des données de la page
+    Le fieldset regroupe plusieurs éléments du formulaire-->
+
+    <fieldset>
+
+        <legend> Formulaire 1 </legend> <br/>
+        <label for="nom"> Nom : </label> <br/>
+        <input type ="text"  name="nom" id="nom">  <br/>
+        <label for="prenom"> Prénom : </label> <br/>
+        <input type ="text"  name="prenom" id="prenom" class=taille2> <br/>
+        <label for="coul"> Votre couleur : </label> <br/>
+        <input type="color" name="couleur" id="coul"> <br/>
+        <label for="courriel">Votre courriel : </label> <br/>
+        <input type="email" name="courriel" id="courriel" placeholder="Saisir une adresse email"> <br/>
+        <label for="chk"> Checkbox la box : </label> <br/>
+        <input type="checkbox" name="checkbox" id="chk"> <br/>
+        <label for="tel"> Votre telephone 1 : </label> <br/>
+        <input type="number" name="phonenumber" id="tel"> <br/>
+        <label for="birth">Votre date de naissance : </label> <br/>
+        <input type="date" name="birthday_year" id="birth"> <br/>
+        <label for="pass">Le mot de passe : </label> <br/>
+        <input type="password" name="password" id="pass" class="taille2"> <br/>
+
+        <label for="civ1">Monsieur :</label>
+        <input type="radio" name="civilité" id="civ1"> <br/>
+
+        <label for="civ2">Madame :</label>
+        <input type="radio" name="btrad" id="civ2"> <br/>
+        <label for="bt">et validez ... </label><br/>
+        <button id="bt"> Valider </button> <br/>
+
+        <label for="ville"> ville </label>
+        <select name="ville" id="ville">
+            <option value="Lille"> Lille </option>
+            <option value="Paris"> Paris </option>
+            <option value="Marseille" selected> Marseille </option>
+        </select>
+
+        <label for="form"> Envoyer les bits ! : </label> <br/>
+        <input type ="submit"  name="envoyer le form" id="form"> <br/>
+
+    </fieldset>
+</form>
+
+</body>
+</html>
